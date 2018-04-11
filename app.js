@@ -13,7 +13,7 @@ const mainvalue = valueInput.slice(2);
 
 // Error message if argument = 0
 if (mainvalue.length === 0) {
-    console.log('Type in 10 + 5 and let me do the job!');
+    console.log('Give me something to work with: type in 10 + 5 and let me do the job!');
 }
 
 // Mainvalues joint into one string
@@ -27,7 +27,7 @@ if (jointToString.search(/[+]/) > 0) {
     console.log(splitedNumbers)
     // sum the numbers
     const sum = parseFloat(splitedNumbers[0]) + parseFloat(splitedNumbers[1]);
-    // Result
+    // Log result to console
     console.log(sum);
 }
 
@@ -37,9 +37,9 @@ else if (jointToString.search(/[-]/) > 0) {
     const splitedNumbers = jointToString.split(/[-]/);
     // log splited numbers
     console.log(splitedNumbers)
-    // sum the numbers
+    // subtract the numbers
     const sum = parseFloat(splitedNumbers[0]) - parseFloat(splitedNumbers[1]);
-    // Result
+    // Log result to console
     console.log(sum);
 }
 
@@ -49,9 +49,9 @@ else if (jointToString.search(/[/]/) > 0) {
     const splitedNumbers = jointToString.split(/[/]/);
     // log splited numbers
     console.log(splitedNumbers)
-    // sum the numbers
+    // divide the numbers
     const sum = parseFloat(splitedNumbers[0]) / parseFloat(splitedNumbers[1]);
-    // Result
+    // Log result to console
     console.log(sum);
 }
 
@@ -61,9 +61,9 @@ else (jointToString.search(/[x]/) > 0) {
     const splitedNumbers = jointToString.split(/[x]/);
     // log splited numbers
     console.log(splitedNumbers)
-    // sum the numbers
+    // multiply the numbers
     const sum = parseFloat(splitedNumbers[0]) * parseFloat(splitedNumbers[1]);
-    // Result
+    // Log result to console
     console.log(sum);
 }
 
