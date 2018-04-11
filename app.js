@@ -58,4 +58,7 @@ else if (jointToString.search(/[x]/) > 0) {
     // Log result to console
     console.log(sum);
 }
-
+else {
+    console.log('Oops! Looks like you used a wrong operator. Try + - / or x ' +
+        ' Have fun!')
+}
