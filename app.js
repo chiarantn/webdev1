@@ -23,20 +23,16 @@ const jointToString = mainvalue.join('');
 if (jointToString.search(/[+]/) > 0) {
     // Split the string and take the numbers before and after the operator
     const splitedNumbers = jointToString.split(/[+]/);
-    // log splited numbers
-    console.log(splitedNumbers)
     // sum the numbers
     const sum = parseFloat(splitedNumbers[0]) + parseFloat(splitedNumbers[1]);
     // Log result to console
-    console.log(sum);
+   console.log(sum);
 }
 
 //  subtract
 else if (jointToString.search(/[-]/) > 0) {
     // Split the string and take the numbers before and after the operator
     const splitedNumbers = jointToString.split(/[-]/);
-    // log splited numbers
-    console.log(splitedNumbers)
     // subtract the numbers
     const sum = parseFloat(splitedNumbers[0]) - parseFloat(splitedNumbers[1]);
     // Log result to console
@@ -47,8 +43,6 @@ else if (jointToString.search(/[-]/) > 0) {
 else if (jointToString.search(/[/]/) > 0) {
     // Split the string and take the numbers before and after the operator
     const splitedNumbers = jointToString.split(/[/]/);
-    // log splited numbers
-    console.log(splitedNumbers)
     // divide the numbers
     const sum = parseFloat(splitedNumbers[0]) / parseFloat(splitedNumbers[1]);
     // Log result to console
@@ -56,11 +50,9 @@ else if (jointToString.search(/[/]/) > 0) {
 }
 
 //  multiply x for *
-else (jointToString.search(/[x]/) > 0) {
+else if (jointToString.search(/[x]/) > 0) {
     // Split the string and take the numbers before and after the operator
     const splitedNumbers = jointToString.split(/[x]/);
-    // log splited numbers
-    console.log(splitedNumbers)
     // multiply the numbers
     const sum = parseFloat(splitedNumbers[0]) * parseFloat(splitedNumbers[1]);
     // Log result to console
