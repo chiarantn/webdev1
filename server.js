@@ -17,29 +17,32 @@ const server = net.createServer(function(socket) {
 
 // function for bubble swapping
 
-        function swap(arr, first_Index, second_Index){
+        function bubbleswap(arr, first_Index, second_Index){
             let temp = arr[first_Index];
             arr[first_Index] = arr[second_Index];
             arr[second_Index] = temp;
         }
 
-//compare elements and swap if needed
+//compare elements and swap
+// i.e. if index 0 sorts before index 1 = negative value and no swapping is needed,
+// if it sorts after = positive value, Elements run into the function and need to be swapped
+
 
         function nameSort(arr){
-            let len = arr.length;
+            let lenArr = arr.length;
             if (arr[0].localeCompare(arr[1], 'de-DE') === 1) {
-                swap(arr, 0, 1);
+                bubbleswap(arr, 0, 1);
             }
             if (arr[1].localeCompare(arr[2], 'de-DE') === 1) {
-                swap(arr, 1, 2);
+                bubbleswap(arr, 1, 2);
             }
             if (arr[2].localeCompare(arr[3], 'de-DE') === 1) {
-                swap(arr, 2, 3);
+                bubbleswap(arr, 2, 3);
             }
             return arr;
         }
 
-        for ( let i = 0; 10 > i; i++)
+        for ( let i = 0; 100 > i; i++)
         {
             nameSort(names);
         }
