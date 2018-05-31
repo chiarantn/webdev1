@@ -6,9 +6,10 @@ const newController = require('./controller/new.controller');
 const detailsController = require('./controller/details.controller');
 const articlesController = require('./controller/articles.controller');
 const addPostController = require('./controller/addPost.controller');
+const searchController = require('./controller/search.controller');
 
-app.use(express.static('src/styles'));  
-//app.use(express.static('src/js'));  
+app.use(express.static('src/styles')); 
+app.use(express.static('src/js'));
 
 app.use(bodyParser.urlencoded({     
   extended: true

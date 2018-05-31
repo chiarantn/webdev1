@@ -1,10 +1,11 @@
-const Mustache = require('mustache');
+const Handlebars = require('handlebars');
 const newTemplate = require('../view/new.template');
-
 
 let newController = (req,res) => {
 
-    let ouput = Mustache.render(newTemplate);
+    let template = Handlebars.compile(newTemplate);
+
+    let ouput = template();
 
     return res.send(ouput);
 };
